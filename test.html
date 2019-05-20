@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Edit Report</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+<script src="main.js"></script>
+<style>
+
+</style>
+</head>
+<body bgcolor="blue">
+<div class ='wrapper'>
+<div class="container">
+
+    <p id="hid"></p>
+        <script>
+var hid = document.getElementById("hid");
+                //var hid = document.getElementById("hid");
+                hid.innerHTML="How are you";
+               // hid.onclick.style.display="none";
+                </script>
+    <!--  
+<form>
+        
+<table bgcolor='tan' align='center' width='550px'>
+<tr><td colspan="7" style="text-align:center;"><h2>Kano Capital Primary School <br>Yandutse Road P.O. Box 1058, Kano <br> Terminal Report <hr></h2></td></tr>      
+<tr>
+<td colspan="2"><label for="">Name:</label> <?php echo $firstname;?></td> <td colspan="2"><label for=""> Middle Name:</label><?php echo $middlename;?></td><td colspan="2"><label for="">Last Name:</label> <?php echo $lastname;?></td>
+</tr>     
+
+<tr>
+<td colspan="4"><label for="">Class:</label> <?php echo $class;?></td><td colspan="3"><label for="">No. in Class:</label> <?php echo $no_in_class;?></td>
+</tr>
+
+<tr>
+<td colspan="4"><label for="">Term:</label> <?php echo $term;?></td><td colspan="3"><label for="">Position:</label>  <?php echo $position_in_class;?></td>
+</tr>
+
+<tr>
+<td colspan="4"><label for="">Average Age:</label><?php echo $average_age;?></td><td colspan="3"><label for="">Age of Child:</label> <?php echo $age;?></td>
+</tr>
+
+
+<tr>
+<td colspan="4"><label for="">No.of Times School Opened:</label> <?php echo $times_sch_opened;?></td><td colspan="3"><label for="">Times Absent:</label> <?php echo $times_absent;?></td>
+</tr>
+
+<tr>
+<td colspan="4"><label for="">Last Term's Position:</label> <?php echo $last_term_position;?></td><td colspan="3"><label for="">Last Term's Average:</label><?php echo $last_term_average;?></td>
+</tr>
+<tr>
+<td colspan="7"><hr></td>
+</tr>
+
+
+<tr>
+<td>Subject</td><td>H/Work</td><td>Test</td><td>Exam</td><td>Total</td><td>Position</td><td>Remark</td>
+</tr>
+
+<tr>
+<td><label>Mathematics:</label></td><td><?php echo $math_hwork;?></td><td> <?php echo $math_test;?> </td><td> <?php echo $math_exam;?> </td><td> <?php echo $math_total;?> </td><td> <?php echo $math_position;?> </td><td><?php echo $math_remark;?> </td>
+</tr>
+
+<tr>
+<td><label>English:</label></td><td><?php echo $english_hwork;?></td><td><?php echo $english_test;?> </td><td> <?php echo $english_exam;?> </td><td> <?php echo $english_total;?></td><td><?php echo $english_position;?></td><td> <?php echo $english_remark;?> </td>
+</tr>
+
+<tr>
+<td><labe>Science:</label></td><td><?php echo $sci_hwork;?></td><td> <?php echo $sci_test;?></td><td><?php echo $sci_exam;?> </td><td> <?php echo $sci_total;?> </td><td> <?php echo $sci_position;?> </td><td> <?php echo $sci_remark;?></td>
+</tr>
+
+<tr>
+<td><label>Social Studies:</label></td><td><?php echo $social_hwork;?></td><td> <?php echo $social_test;?> </td><td> <?php echo $social_exam;?></td><td> <?php echo $social_total;?> </td><td> <?php echo $social_position;?> </td><td> <?php echo $social_remark;?></td>
+</tr>
+
+<tr>
+<td><label>H/Education:</label></td><td><?php echo $health_hwork;?></td><td> <?php echo $health_test;?> </td><td><?php echo $health_exam;?></td><td> <?php echo $health_total;?> </td><td> <?php echo $health_position;?></td><td><?php echo $health_remark;?> </td>
+</tr>
+
+<tr>
+<td><label>C/Education:</label></td><td><?php echo $civic_hwork;?></td><td><?php echo $civic_test;?></td><td><?php echo $civic_exam;?> </td><td> <?php echo $civic_total;?></td><td><?php echo $civic_position;?></td><td><?php echo $civic_remark; ?> </td>
+</tr>
+
+<tr>
+<td><label>Q/Reasoning:</label></td><td><?php echo $quantitative_hwork;?></td><td><?php echo $quantitative_test;?> </td><td><?php echo $quantitative_exam;?> </td><td> <?php echo $quantitative_total;?> </td><td><?php echo $quantitative_position;?> </td><td><?php echo $quantitative_remark;?> </td>
+</tr>
+
+<tr>
+<td><label>V/Reasoning:</label></td><td><?php echo $verbal_hwork;?></td><td> <?php echo $verbal_test;?></td><td> <?php echo $verbal_exam;?></td><td> <?php echo $verbal_total;?> </td><td> <?php echo $verbal_position;?></td><td><?php echo $verbal_remark;?> </td>
+</tr>
+
+<tr>
+<td><label>I.R.K:</label></td><td><?php echo $irk_hwork;?></td><td> <?php echo $irk_test;?> </td><td> <?php echo $irk_exam;?> </td><td> <?php echo $irk_total;?> </td><td><?php echo $irk_position;?></td><td> <?php echo $irk_remark;?> </td>
+</tr>
+
+<tr>
+<td><label>Hausa: </label></td><td><?php echo $hausa_hwork;?></td><td><?php echo $hausa_test;?> </td><td><?php echo $hausa_exam;?> </td><td><?php echo $hausa_total;?></td><td><?php echo $hausa_position;?> </td><td><?php echo $hausa_remark;?> </td>
+</tr>
+
+<tr>
+<td><label>Arabic:</label></td><td><?php echo $arabic_hwork;?></td><td> <?php echo $arabic_test;?></td><td><?php echo $arabic_exam;?> </td><td><?php echo $arabic_total;?> </td><td> <?php echo $arabic_position;?></td><td> <?php echo $arabic_remark;?> </td>
+</tr>
+
+<tr>
+<td><label>Computer:</label></td><td><?php echo $computer_hwork;?></td><td> <?php echo $computer_test;?> </td><td> <?php echo $computer_exam;?></td><td><?php echo $computer_total;?> </td><td><?php echo $computer_position;?> </td><td><?php echo $computer_remark;?></td>
+</tr>
+
+<tr>
+<td><label>Total:</label></td><td></td><td></td><td> </td><td>:<?php echo $totl;?></td><td> </td><td> </td>
+</tr>
+
+<tr>
+<td><label>Average</label></td><td></td><td> </td><td> </td><td>:<?php echo $averag;?> </td><td> </td><td> </td>
+</tr>
+<tr>
+<td><label>Class Average</label></td><td></td><td> </td><td> </td><td>:<?php echo $class_averag;?> </td><td></td><td> </td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="center"><hr> GENERAL REMARKS</td>
+</tr>
+
+<tr>
+<td colspan="7"><label for=""> Academic Performance:</label><?php echo $academic_performance;?></td>
+</tr>
+
+<tr>
+<td colspan="7"><label for="">General Behaviour:</label><?php echo $general_behaviour;?><hr></td>
+</tr> 
+
+
+<tr>
+<td colspan="4"><label for="">Neatness:</label> <?php echo $neatness;?></td>
+</tr>
+   
+<tr>
+<td colspan="3"><label for=""> Class Teacher's Name:</label><?php echo $teacher_name;?></td><td colspan="2"><label for="">Signature:</label><?php echo $teacher_sign;?></td> <td><label for=""> Date:</label><?php echo $teacher_date;?></td>
+</tr>
+   
+<tr>
+<td colspan="3"><label for=""> Next Term Begins:</label><?php echo $next_term_begin;?></td><td colspan="2"><label for="">Next Term Fees:</label><?php echo $next_term_fee;?></td><td colspan="2"><label for="">Fees Owing:</label><?php echo $fee_owing;?></td>
+
+</tr>
+<tr>
+   <td colspan="3"><label for=""> Principal:</label><?php echo $principal_name;?></td><td colspan="2"> <label for="">Signature:</label><?php echo $principal_sign;?></td><td colspan="2"><label for="">Date:</label><?php echo $principal_date;?></td>
+</tr>
+   
+<tr>
+   <td colspan="3"><label for="">Parent's Signature:</label><?php echo $parent_sign;?></td><td colspan="3"><label for="">Date :</label><?php echo $parent_date;?></td>
+
+</tr>
+
+</table>
+</form>
+<hr>
+-->
+</div>
+</div>
+</body>
+</html>
